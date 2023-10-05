@@ -1,0 +1,18 @@
+app:
+  name: poi-poi-map-app
+  namespace: poi
+  cluster: .apps.cluster-zgdlq.sandbox293.opentlc.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdhdemo/poi-frontend-gitops.git
+  org: rhdhdemo
+  name: poi-frontend
+  host: github.com
+  token: ''
+  webhookSecret: ''
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: poi/poi-map-app
+  tag: latest
